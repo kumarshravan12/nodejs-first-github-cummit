@@ -3,9 +3,13 @@
 
 
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 //define the mongodb connection url 
-const mongoURL = 'mongodb://localhost:27017/hotels' // Replace 'mydatabse' with your database name 
+//const mongoURL = process.env.MONGODB_LOACL_URL // Replace 'mydatabse' with your database name 
+
+// ye mongoose atles databse wala url hi 
+const mongoURL =process.env.MONGODB_URL;
 
 //set up MongoDB  connection 
 mongoose.connect(mongoURL,{

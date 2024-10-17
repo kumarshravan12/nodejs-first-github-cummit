@@ -32,6 +32,8 @@ const app = express();
 
 const db = require('./db'); // connection wala hi ye 
 
+require('dotenv').config();
+
 
 //body- parser 
 
